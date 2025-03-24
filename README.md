@@ -22,6 +22,12 @@ By automatically processing loan data and executing daily data quality checks, b
 
 CSV / XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG → Output (CSV / PostgreSQL)
 
+### Pipeline Diagram:
+
+<img src="./assets/final_data_flow.png" width="700"/>
+
+
+
 
 ## 📋 Process Steps
 
@@ -49,7 +55,8 @@ CSV / XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG �
 
 
 
-### 📁 File Structure
+
+## 📁 File Structure
 
 
 ```
@@ -65,7 +72,7 @@ CSV / XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG �
 
 
 
-### ⚙️ How to Run the Project
+## ⚙️ How to Run the Project
 ```bash
 # Start services
 docker-compose up -d
@@ -81,7 +88,7 @@ python scripts/run_dqa.py
 
 
 
-### 📊 Output Example
+## 📊 Output Example
 
 
 Validation results are saved to `results/status_table.csv`.
@@ -90,7 +97,9 @@ The output includes the test case ID, file name, status (pass/fail), and a messa
 
 
 
-### 📄 Full DQA Specification
+
+
+## 📄 Full DQA Specification
 
 
 See dqa_specification.md for detailed validation logic and column mapping.

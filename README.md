@@ -14,13 +14,13 @@ By automatically processing loan data and executing daily data quality checks, b
 - **MinIO**: S3-compatible object storage for saving files in various formats (CSV, Parquet).
 - **PySpark**: Big data processing and validation using the Spark distributed engine.
 - **Apache Airflow**: Workflow scheduling and orchestration for automated data pipelines.
-- **PostgreSQL** (optional): Stores logging and validation results.
-- **Tableau / CSV Output**: Visualization or reporting of validation results.
+-- **PostgreSQL** (in consideration): Stores logging and validation results.
+- **CSV Status Report**: Visualization or reporting of validation results.
 
 
 ## 🔄 Data Flow
 
-CSV / XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG → Output (CSV / PostgreSQL)
+CSV & XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG → Output (CSV / PostgreSQL)
 
 ### Pipeline Diagram:
 
@@ -41,7 +41,7 @@ CSV / XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG �
 
 
 
-## 🧪 Validation Types Implemented (including functions names)
+## 🧪 Validation Types Implemented (including PySpark functions names)
 
 
 - **Completeness**: `check_nulls`, `count_records`.
@@ -72,16 +72,17 @@ CSV / XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG �
 
 
 
-## ⚙️ How to Run the Project
+## ⚙️ How to Run the Project 
 ```bash
-# Start services
+# docker-compose.yaml:
+locate the file in the path of your Docker source files.
+
+# Start services 
 docker-compose up -d
 
 # Run PySpark validation script
 python scripts/run_dqa.py
 
-# Run PySpark validation script
-python scripts/run_dqa.py
 ```
 ---
 
@@ -92,15 +93,11 @@ python scripts/run_dqa.py
 
 
 Validation results are saved to `results/status_table.csv`.
-The output includes the test case ID, file name, status (pass/fail), and a message.
-
-
-
+The output includes the test case ID, file name, status (pass/fail), and the log message.
 
 
 
 ## 📄 Full DQA Specification
-
 
 See dqa_specification.md for detailed validation logic and column mapping.
 

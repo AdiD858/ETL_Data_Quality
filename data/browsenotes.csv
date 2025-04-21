@@ -1,0 +1,121 @@
+BrowseNotesFile,Description,column_name,source_sheet
+acceptD,The date which the borrower accepted  the offer,acceptD,BrowseNotes
+accNowDelinq,The number of accounts on which the borrower is now delinquent.,accNowDelinq,BrowseNotes
+accOpenPast24Mths,Number of trades opened in past 24 months.,accOpenPast24Mths,BrowseNotes
+addrState,The state provided by the borrower in the loan application,addrState,BrowseNotes
+all_util,Balance to credit limit on all trades,all_util,BrowseNotes
+annual_inc_joint,The combined self-reported annual income provided by the co-borrowers during registration,annual_inc_joint,BrowseNotes
+annualInc,The self-reported annual income provided by the borrower during registration.,annualInc,BrowseNotes
+application_type,Indicates whether the loan is an individual application or a joint application with two co-borrowers,application_type,BrowseNotes
+avg_cur_bal,Average current balance of all accounts,avg_cur_bal,BrowseNotes
+bcOpenToBuy,Total open to buy on revolving bankcards.,bcOpenToBuy,BrowseNotes
+bcUtil,Ratio of total current balance to high credit/credit limit for all bankcard accounts.,bcUtil,BrowseNotes
+chargeoff_within_12_mths,Number of charge-offs within 12 months,chargeoff_within_12_mths,BrowseNotes
+collections_12_mths_ex_med,Number of collections in 12 months excluding medical collections,collections_12_mths_ex_med,BrowseNotes
+creditPullD,The date LC pulled credit for this loan,creditPullD,BrowseNotes
+delinq2Yrs,The number of 30+ days past-due incidences of delinquency in the borrower's credit file for the past 2 years,delinq2Yrs,BrowseNotes
+delinqAmnt,The past-due amount owed for the accounts on which the borrower is now delinquent.,delinqAmnt,BrowseNotes
+desc,Loan description provided by the borrower,desc,BrowseNotes
+dti,"A ratio calculated using the borrower’s total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower’s self-reported monthly income.",dti,BrowseNotes
+dti_joint,"A ratio calculated using the co-borrowers' total monthly payments on the total debt obligations, excluding mortgages and the requested LC loan, divided by the co-borrowers' combined self-reported monthly income",dti_joint,BrowseNotes
+earliestCrLine,The date the borrower's earliest reported credit line was opened,earliestCrLine,BrowseNotes
+effective_int_rate,The effective interest rate is equal to the interest rate on a Note reduced by Lending Club's estimate of the impact of uncollected interest prior to charge off. ,effective_int_rate,BrowseNotes
+emp_title,The job title supplied by the Borrower when applying for the loan.*,emp_title,BrowseNotes
+empLength,Employment length in years. Possible values are between 0 and 10 where 0 means less than one year and 10 means ten or more years.,empLength,BrowseNotes
+expD,The date the listing will expire,expD,BrowseNotes
+expDefaultRate,The expected default rate of the loan.,expDefaultRate,BrowseNotes
+ficoRangeHigh,The upper boundary range the borrower’s FICO at loan origination belongs to.,ficoRangeHigh,BrowseNotes
+ficoRangeLow,The lower boundary range the borrower’s FICO at loan origination belongs to.,ficoRangeLow,BrowseNotes
+fundedAmnt,The total amount committed to that loan at that point in time.,fundedAmnt,BrowseNotes
+grade,LC assigned loan grade,grade,BrowseNotes
+homeOwnership,"The home ownership status provided by the borrower during registration. Our values are: RENT, OWN, MORTGAGE, OTHER.",homeOwnership,BrowseNotes
+id,A unique LC assigned ID for the loan listing.,id,BrowseNotes
+il_util,Ratio of total current balance to high credit/credit limit on all install acct,il_util,BrowseNotes
+ils_exp_d,wholeloan platform expiration date,ils_exp_d,BrowseNotes
+initialListStatus,"The initial listing status of the loan. Possible values are – W, F",initialListStatus,BrowseNotes
+inq_fi,Number of personal finance inquiries,inq_fi,BrowseNotes
+inq_last_12m,Number of credit inquiries in past 12 months,inq_last_12m,BrowseNotes
+inqLast6Mths,The number of inquiries in past 6 months (excluding auto and mortgage inquiries),inqLast6Mths,BrowseNotes
+installment,The monthly payment owed by the borrower if the loan originates.,installment,BrowseNotes
+intRate,Interest Rate on the loan,intRate,BrowseNotes
+isIncV,"Indicates if income was verified by LC, not verified, or if the income source was verified",isIncV,BrowseNotes
+listD,The date which the borrower's application was listed on the platform.,listD,BrowseNotes
+loanAmnt,"The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.",loanAmnt,BrowseNotes
+max_bal_bc,Maximum current balance owed on all revolving accounts,max_bal_bc,BrowseNotes
+memberId,A unique LC assigned Id for the borrower member.,memberId,BrowseNotes
+mo_sin_old_rev_tl_op,Months since oldest revolving account opened,mo_sin_old_rev_tl_op,BrowseNotes
+mo_sin_rcnt_rev_tl_op,Months since most recent revolving account opened,mo_sin_rcnt_rev_tl_op,BrowseNotes
+mo_sin_rcnt_tl,Months since most recent account opened,mo_sin_rcnt_tl,BrowseNotes
+mortAcc,Number of mortgage accounts.,mortAcc,BrowseNotes
+msa,Metropolitan Statistical Area of the borrower.,msa,BrowseNotes
+mths_since_last_major_derog,Months since most recent 90-day or worse rating,mths_since_last_major_derog,BrowseNotes
+mths_since_oldest_il_open,Months since oldest bank installment account opened,mths_since_oldest_il_open,BrowseNotes
+mths_since_rcnt_il,Months since most recent installment accounts opened,mths_since_rcnt_il,BrowseNotes
+mthsSinceLastDelinq,The number of months since the borrower's last delinquency.,mthsSinceLastDelinq,BrowseNotes
+mthsSinceLastRecord,The number of months since the last public record.,mthsSinceLastRecord,BrowseNotes
+mthsSinceMostRecentInq,Months since most recent inquiry.,mthsSinceMostRecentInq,BrowseNotes
+mthsSinceRecentBc,Months since most recent bankcard account opened.,mthsSinceRecentBc,BrowseNotes
+mthsSinceRecentLoanDelinq,Months since most recent personal finance delinquency.,mthsSinceRecentLoanDelinq,BrowseNotes
+mthsSinceRecentRevolDelinq,Months since most recent revolving delinquency.,mthsSinceRecentRevolDelinq,BrowseNotes
+num_accts_ever_120_pd,Number of accounts ever 120 or more days past due,num_accts_ever_120_pd,BrowseNotes
+num_actv_bc_tl,Number of currently active bankcard accounts,num_actv_bc_tl,BrowseNotes
+num_actv_rev_tl,Number of currently active revolving trades,num_actv_rev_tl,BrowseNotes
+num_bc_sats,Number of satisfactory bankcard accounts,num_bc_sats,BrowseNotes
+num_bc_tl,Number of bankcard accounts,num_bc_tl,BrowseNotes
+num_il_tl,Number of installment accounts,num_il_tl,BrowseNotes
+num_op_rev_tl,Number of open revolving accounts,num_op_rev_tl,BrowseNotes
+num_rev_accts,Number of revolving accounts,num_rev_accts,BrowseNotes
+num_rev_tl_bal_gt_0,Number of revolving trades with balance >0,num_rev_tl_bal_gt_0,BrowseNotes
+num_sats,Number of satisfactory accounts,num_sats,BrowseNotes
+num_tl_120dpd_2m,Number of accounts currently 120 days past due (updated in past 2 months),num_tl_120dpd_2m,BrowseNotes
+num_tl_30dpd,Number of accounts currently 30 days past due (updated in past 2 months),num_tl_30dpd,BrowseNotes
+num_tl_90g_dpd_24m,Number of accounts 90 or more days past due in last 24 months,num_tl_90g_dpd_24m,BrowseNotes
+num_tl_op_past_12m,Number of accounts opened in past 12 months,num_tl_op_past_12m,BrowseNotes
+open_acc_6m,Number of open trades in last 6 months,open_acc_6m,BrowseNotes
+open_il_12m,Number of installment accounts opened in past 12 months,open_il_12m,BrowseNotes
+open_il_24m,Number of installment accounts opened in past 24 months,open_il_24m,BrowseNotes
+open_act_il,Number of currently active installment trades,open_act_il,BrowseNotes
+open_rv_12m,Number of revolving trades opened in past 12 months,open_rv_12m,BrowseNotes
+open_rv_24m,Number of revolving trades opened in past 24 months,open_rv_24m,BrowseNotes
+openAcc,The number of open credit lines in the borrower's credit file.,openAcc,BrowseNotes
+pct_tl_nvr_dlq,Percent of trades never delinquent,pct_tl_nvr_dlq,BrowseNotes
+percentBcGt75,Percentage of all bankcard accounts > 75% of limit.,percentBcGt75,BrowseNotes
+pub_rec_bankruptcies,Number of public record bankruptcies,pub_rec_bankruptcies,BrowseNotes
+pubRec,Number of derogatory public records,pubRec,BrowseNotes
+purpose,A category provided by the borrower for the loan request. ,purpose,BrowseNotes
+reviewStatus,"The status of the loan during the listing period. Values: APPROVED, NOT_APPROVED.",reviewStatus,BrowseNotes
+reviewStatusD,The date the loan application was reviewed by LC,reviewStatusD,BrowseNotes
+revolBal,Total credit revolving balance,revolBal,BrowseNotes
+revolUtil,"Revolving line utilization rate, or the amount of credit the borrower is using relative to all available revolving credit.",revolUtil,BrowseNotes
+serviceFeeRate,Service fee rate paid by the investor for this loan.,serviceFeeRate,BrowseNotes
+subGrade,LC assigned loan subgrade,subGrade,BrowseNotes
+tax_liens,Number of tax liens,tax_liens,BrowseNotes
+term,The number of payments on the loan. Values are in months and can be either 36 or 60.,term,BrowseNotes
+title,The loan title provided by the borrower,title,BrowseNotes
+tot_coll_amt,Total collection amounts ever owed,tot_coll_amt,BrowseNotes
+tot_cur_bal,Total current balance of all accounts,tot_cur_bal,BrowseNotes
+tot_hi_cred_lim,Total high credit/credit limit,tot_hi_cred_lim,BrowseNotes
+total_bal_il,Total current balance of all installment accounts,total_bal_il,BrowseNotes
+total_cu_tl,Number of finance trades,total_cu_tl,BrowseNotes
+total_il_high_credit_limit,Total installment high credit/credit limit,total_il_high_credit_limit,BrowseNotes
+total_rev_hi_lim  ,Total revolving high credit/credit limit,total_rev_hi_lim  ,BrowseNotes
+totalAcc,The total number of credit lines currently in the borrower's credit file,totalAcc,BrowseNotes
+totalBalExMort,Total credit balance excluding mortgage,totalBalExMort,BrowseNotes
+totalBcLimit,Total bankcard high credit/credit limit,totalBcLimit,BrowseNotes
+url,URL for the LC page with listing data.,url,BrowseNotes
+verified_status_joint,"Indicates if the co-borrowers' joint income was verified by LC, not verified, or if the income source was verified",verified_status_joint,BrowseNotes
+zip_code,The first 3 numbers of the zip code provided by the borrower in the loan application.,zip_code,BrowseNotes
+revol_bal_joint ," Sum of revolving credit balance of the co-borrowers, net of duplicate balances",revol_bal_joint ,BrowseNotes
+sec_app_fico_range_low , FICO range (high) for the secondary applicant,sec_app_fico_range_low ,BrowseNotes
+sec_app_fico_range_high , FICO range (low) for the secondary applicant,sec_app_fico_range_high ,BrowseNotes
+sec_app_earliest_cr_line , Earliest credit line at time of application for the secondary applicant,sec_app_earliest_cr_line ,BrowseNotes
+sec_app_inq_last_6mths , Credit inquiries in the last 6 months at time of application for the secondary applicant,sec_app_inq_last_6mths ,BrowseNotes
+sec_app_mort_acc , Number of mortgage accounts at time of application for the secondary applicant,sec_app_mort_acc ,BrowseNotes
+sec_app_open_acc , Number of open trades at time of application for the secondary applicant,sec_app_open_acc ,BrowseNotes
+sec_app_revol_util , Ratio of total current balance to high credit/credit limit for all revolving accounts,sec_app_revol_util ,BrowseNotes
+sec_app_open_act_il, Number of currently active installment trades at time of application for the secondary applicant,sec_app_open_act_il,BrowseNotes
+sec_app_num_rev_accts , Number of revolving accounts at time of application for the secondary applicant,sec_app_num_rev_accts ,BrowseNotes
+sec_app_chargeoff_within_12_mths , Number of charge-offs within last 12 months at time of application for the secondary applicant,sec_app_chargeoff_within_12_mths ,BrowseNotes
+sec_app_collections_12_mths_ex_med , Number of collections within last 12 months excluding medical collections at time of application for the secondary applicant,sec_app_collections_12_mths_ex_med ,BrowseNotes
+sec_app_mths_since_last_major_derog , Months since most recent 90-day or worse rating at time of application for the secondary applicant,sec_app_mths_since_last_major_derog ,BrowseNotes
+disbursement_method,"The method by which the borrower receives their loan. Possible values are: CASH, DIRECT_PAY",disbursement_method,BrowseNotes

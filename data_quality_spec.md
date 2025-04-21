@@ -21,27 +21,24 @@ LendingClub is a US-based peer-to-peer lending platform connecting borrowers and
 ## 3. System Architecture Overview
 The system consists of the following components:
 
-- **NiFi**: Ingests data from external sources
 - **MinIO**: Object storage for raw and processed data
 - **PySpark**: Executes validation functions
 - **Airflow**: Schedules and manages validation pipeline
 - **PostgreSQL**: (Optional) Stores logs and results
 
-### Architecture Diagram:
-(*Insert diagram or text-based flow here*)
 
 ---
 
 ## 4. Data Flow and Components
 
 ### 4.1 Data Ingestion
-CSV/XLSX files ingested via NiFi
+ files ingested via NiFi
 
 ### 4.2 Data Storage
-Files saved in MinIO in Parquet format
+CSV/XLSX Files saved in MinIO, thena after the validation process, kept in MinIO different Backet at Parquet format
 
 ### 4.3 DQA Engine (PySpark)
-PySpark reads data, runs tests, and writes logs
+PySpark commands to read the data, running tests, and writes logs
 
 ### 4.4 Orchestration (Airflow)
 Airflow DAG defines full ETL + DQA flow
@@ -91,6 +88,8 @@ The `Operational_table.csv` file defines which test runs on which file and colum
 | tested_field   | Column being tested                              |
 | expected_value | Expected value, range, or condition              |
 
+* is_active currently called 'Enabled': True\False , at the current flow all the tests marked as True
+* Critical - current field: if the test failes, True-stop the process, False- mentaion in the report. currently only test type 'validation' columns marked as critical. 
 ---
 
 ## 8. Logging and Outputs

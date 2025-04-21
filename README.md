@@ -10,7 +10,6 @@ By automatically processing loan data and executing daily data quality checks, b
 ## 📦 Technologies Used
 
 - **Docker**: Container orchestration tool that manages all project services.
-- **Apache NiFi**: Used for data ingestion, ETL pipeline creation, and metadata management.
 - **MinIO**: S3-compatible object storage for saving files in various formats (CSV, Parquet).
 - **PySpark**: Big data processing and validation using the Spark distributed engine.
 - **Apache Airflow**: Workflow scheduling and orchestration for automated data pipelines.
@@ -20,7 +19,7 @@ By automatically processing loan data and executing daily data quality checks, b
 
 ## 🔄 Data Flow
 
-CSV & XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG → Output (CSV / PostgreSQL)
+CSV & XLSX files → MinIO → PySpark (Validations) → Airflow DAG → Output (CSV / PostgreSQL)
 
 ### Pipeline Diagram:
 
@@ -32,11 +31,10 @@ CSV & XLSX files → NiFi → MinIO → PySpark (Validations) → Airflow DAG �
 ## 📋 Process Steps
 
 1. Upload raw data files (CSV/XLSX) to MinIO.
-2. Ingest files using NiFi and manage data flow.
+2. Use Airflow DAG to schedule and orchestrate the validation process.
 3. Run PySpark-based data quality checks.
 4. Store clean data in Parquet format.
-5. Use Airflow DAG to schedule and orchestrate the validation process.
-6. Output validation results to CSV or PostgreSQL.
+5. Output validation results to CSV or PostgreSQL.
 
 
 
